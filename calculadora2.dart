@@ -10,6 +10,7 @@ void main(){
   
   double? n1 = double.tryParse(entrada1 ?? '');
   // ?? '' = Significa "se o valor à esquerda (entrada1) for nulo, então use o valor à direita (uma String vazia '')".
+  // é conhecido como operador de coalescência nula (null-coalescing operator). Ele serve para fornecer um valor padrão (fallback) à direita caso a expressão da esquerda seja null
   double? n2 = double.tryParse(entrada2 ?? '');
   
   if (n1 == null || n2 == null){

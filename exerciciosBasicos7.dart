@@ -1,0 +1,1 @@
+    Faça uma função que receba uma lista de números e exiba apenas os números pares. 
