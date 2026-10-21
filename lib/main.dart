@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  //runApp(const MyApp());
-  runApp(const Home());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget { // Widget
@@ -11,11 +10,7 @@ class MyApp extends StatelessWidget { // Widget
   @override
   Widget build(BuildContext context) {
     return MaterialApp( // Widget
-      home: Container( // também é um widget
-        color: Colors.yellow,
-        alignment: Alignment.center,
-        child: Text('Olá Mundo'), // tudo é widget
-      ), // Fim de container
+      home: Home()
     ); // Fim de MaterialApp
   }
 }
