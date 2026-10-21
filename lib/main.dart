@@ -21,12 +21,32 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black,
       appBar: AppBar(
         title: Text('Home'),
       ), //AppBAr
-      body: Center(
-        child:Text('Olá mundo'),
-      ) //Center
-    );
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center, //alinhamento vertical
+        crossAxisAlignment: CrossAxisAlignment.center, //alinhamento horizontal
+        children: const [
+          Text(
+            'Pode Entrar',
+            style: TextStyle(
+              fontSize:30,
+              color:Colors.white,
+              fontWeight:FontWeight.bold
+              ), //Style
+          ), // Text
+          Text(
+            '0',
+            style: TextStyle(
+              fontSize:30,
+              color:Colors.white,
+              fontWeight:FontWeight.bold
+            ), //Style
+          ), // Text
+        ], // children: const[]
+      ) // Column
+    ); // Scaffold
   }
 }
