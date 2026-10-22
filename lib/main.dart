@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       // Widget
       home: Home(),
-    ); // Fim de MaterialApp
+    ); // MaterialApp
   }
 }
 
@@ -59,7 +59,7 @@ class _HomeState extends State<Home> {
         ), // Text
         centerTitle: true,
         backgroundColor: Colors.cyan,
-      ), //AppBAr
+      ), // AppBAr
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center, //alinhamento vertical
         crossAxisAlignment: CrossAxisAlignment.center, //alinhamento horizontal
@@ -71,19 +71,20 @@ class _HomeState extends State<Home> {
               color: Colors.white,
               fontWeight: FontWeight.bold,
 			  letterSpacing: 4,
-            ), //Style
+            ), // TextStyle
           ), // Text
 		  Text('$_peopleCount',style: TextStyle(
             fontSize: 30, 
             color: Colors.white,
             fontWeight: FontWeight.bold
-            ), // Style
+            ), // TextStyle
           ), // Text
           Row(
 			mainAxisAlignment: MainAxisAlignment.center, // Alinhamento horizontal
             children: [
-              TextButton(
+              ElevatedButton(
                 onPressed: _decrementPeople,
+				style: ElevatedButton.styleFrom(backgroundColor: Colors.black38),
                 child: Text(
                   'Saiu',
                   style: TextStyle(
@@ -91,9 +92,10 @@ class _HomeState extends State<Home> {
                     color: Colors.white,
                   ), // TextStyle
                 ), // Text
-              ), // TextButton
-              TextButton(
+              ), // ElevatedButton
+              ElevatedButton(
                 onPressed: _incrementPeople,
+				style: ElevatedButton.styleFrom(backgroundColor: Colors.black38),
                 child: Text(
                   'Entrou',
                   style: TextStyle(
@@ -101,7 +103,7 @@ class _HomeState extends State<Home> {
                     color: Colors.white,
                   ), // TextStyle
                 ), // Text
-              ), // TextButton
+              ), // ElevatedButton
             ], // children
           ), // Row( children:[...]
         ], // children
